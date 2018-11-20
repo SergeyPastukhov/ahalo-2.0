@@ -14,6 +14,7 @@
 		3F87C6A3219EF22B009419B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F87C6A1219EF22B009419B6 /* LaunchScreen.storyboard */; };
 		3F87C6AE219EF22B009419B6 /* ahaloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87C6AD219EF22B009419B6 /* ahaloTests.swift */; };
 		3F87C6B9219EF22B009419B6 /* ahaloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87C6B8219EF22B009419B6 /* ahaloUITests.swift */; };
+		3F98F8A221A4241A00FA09EA /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F98F8A121A4241A00FA09EA /* game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3F87C6B4219EF22B009419B6 /* ahaloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ahaloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F87C6B8219EF22B009419B6 /* ahaloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ahaloUITests.swift; sourceTree = "<group>"; };
 		3F87C6BA219EF22B009419B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F98F8A121A4241A00FA09EA /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3F87C698219EF22A009419B6 /* AppDelegate.swift */,
 				3F87C69A219EF22A009419B6 /* ViewController.swift */,
 				3F87C69C219EF22A009419B6 /* Main.storyboard */,
+				3F98F8A121A4241A00FA09EA /* game.swift */,
 				3F87C69F219EF22B009419B6 /* Assets.xcassets */,
 				3F87C6A1219EF22B009419B6 /* LaunchScreen.storyboard */,
 				3F87C6A4219EF22B009419B6 /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F98F8A221A4241A00FA09EA /* game.swift in Sources */,
 				3F87C69B219EF22A009419B6 /* ViewController.swift in Sources */,
 				3F87C699219EF22A009419B6 /* AppDelegate.swift in Sources */,
 			);
