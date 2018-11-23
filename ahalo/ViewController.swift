@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         "Домик",
         "Ель",
         "Ёж",
-        "Железная Дорога"
+        "Дорога"
     ]
     
     @IBOutlet weak var TreeImageview: UIImageView!
@@ -39,16 +39,26 @@ class ViewController: UIViewController {
     {
         let word = listOfWords.removeFirst()
         game = Game (word: word, incorrectMovesRemaining:
-            incorrectMovesAllowed  )
+            incorrectMovesAllowed, guessedLetters: [])
+        updateUI()
     }
+    
     func updateUI ()  {
-        let name = "Tree 5"
+        let name = "Tree \(game.formattedWord)"
         TreeImageview.image = UIImage(named: name)
+        var letters = [String]()
+        let formattedWord = game.formattedWord.uppercased()
+        for letter in formattedWord {
+            letters.append(String(letter))
+        }
         scoreLabel.text = "Выигрыши: \(totalWins), Проигрыши: \(totalLosses)"
         
     }
     @IBAction func ButtonPressed(_ sender: UIButton) {
         sender.isEnabled = false
+        let letter = sender.title(for: .normal)!.lowercased()
+        game.playerGuessed(letter: Character(letter))
+        updateUI()
     }
     
     
